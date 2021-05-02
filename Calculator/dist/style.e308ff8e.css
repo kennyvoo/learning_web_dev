@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+
+.calculatorbody{
+    width: 202px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "answer answer answer answer"
+    "operator-row operator-row operator-row operator-row"
+    "numpad numpad numpad operator-col"
+    "numpad numpad numpad operator-col"
+    "numpad numpad numpad operator-col";
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    position: relative;
+
+}
+.button{
+    margin: 1px 1px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(177, 84, 84);
+}
+
+
+.button:active{
+    background-color: grey;
+}
+
+
+.answer{
+    background-color: black;
+    color: white;
+    padding-right: 10px;
+    border: 1px solid black;
+    grid-area: answer;
+    text-align:end;
+    font-size:40px;
+}
+
+.operator-row{
+    margin:1px 0px;
+    padding:0;
+    grid-area:operator-row;
+    display:flex;
+    align-content: center;
+    flex-direction:row;
+    background-color: black;
+
+}
+
+.ops-row{
+    background-color: grey;
+    border: 1px solid black;
+}
+.divide{
+    margin-left: 10px;
+    background-color: orange;
+}
+
+.numberpad{
+    margin:1px 0px;
+    padding:0;
+    grid-area: numpad;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.number{
+    background-color: rgba(189, 179, 179, 0.5);
+}
+
+.bigger-button{
+    width:92px;
+    border-radius: 15px;
+}
+
+.operator-col{
+    margin:0;
+    padding:0;
+    grid-area:operator-col;
+    display:flex;
+    flex-direction:column;
+    align-items: stretch;
+}
+
+.ops-col{
+    background-color: orange;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
